@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; 
+background-color: #131524;
+margin: 0;
+padding: 0;
+
+}
+body { margin: 0; padding: 0;font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+    // display: flex;
+// align-items: center;
+}
+mat-card{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+.container{
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-disabled-selected-icon-color: #fff;
+    --mdc-radio-disabled-unselected-icon-color: #fff;
+    --mdc-radio-unselected-hover-icon-color: #ffffff;
+    --mat-radio-ripple-color: #fff;
+}

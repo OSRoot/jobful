@@ -1,0 +1,86 @@
+<mat-toolbar color="light">
+  <a href="" class="logo">Jobful</a>
+</mat-toolbar>
+
+<!-- ############################################################# -->
+
+<app-spinner *ngIf="isLoading"></app-spinner>
+<div class="container">
+  <h1>Join as a client or freelancer</h1>
+
+  <div class="checker">
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-terminal"></i>
+      </div>
+      <div class="info">
+        <div class="client-check">
+          <mat-radio-button value="client" (click)="set_option($event)">
+            <h3 class="option1">As Client</h3>
+          </mat-radio-button>
+          <p>Join as a client</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-terminal"></i>
+      </div>
+      <div class="info">
+        <div class="freelancer-check">
+          <mat-radio-button value="freelancer" (click)="set_option($event)">
+            <h3 class="option2">As Freelancer</h3>
+          </mat-radio-button>
+          <p>Join in as a freelancer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="submit-choose"
+    mat-raised-button
+    color="light"
+    disabled
+    [hidden]="isHidden"
+  >
+    Create An Account
+  </button>
+  <button
+    class="submit-choose"
+    *ngIf="freelancer"
+    mat-raised-button
+    color="primary"
+    (click)="go_signup_freelancer()"
+  >
+    Apply as {{ freelancer }}
+  </button>
+  <button
+    class="submit-choose"
+    *ngIf="client"
+    mat-raised-button
+    color="primary"
+    (click)="go_signup_client()"
+  >
+    Join as {{ client }}
+  </button>
+</div>
+<!-- ########################################################################################################### -->
+
+<footer class="footer">
+  <p class="footer-title">Copyrights @ <span>Ahmed Ala</span></p>
+
+  <div class="social-icons">
+    <a href="#facebook">
+      <mat-icon>facebook</mat-icon>
+    </a>
+
+    <a href="#Twiter">
+      <mat-icon>github</mat-icon>
+    </a>
+
+    <a href="#linkedin">
+      <mat-icon svgIcon="twitter"></mat-icon>
+    </a>
+  </div>
+</footer>

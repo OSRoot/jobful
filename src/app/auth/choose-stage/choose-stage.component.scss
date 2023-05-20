@@ -1,0 +1,134 @@
+
+mat-toolbar{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background: #131524;
+    border-bottom: 1px solid #dfdfdf;
+    // width: 100%;
+    a{
+        text-decoration: none;
+        color: #5075d5;
+        font-size: 30px;
+        font-weight: 767;
+    }
+}
+
+
+.container{
+  background-color: #f0f0f0;
+  box-shadow: 0 5px 30px rgba(1 1 1/20%);
+  border-radius: 20px;
+    color: #5075d5;
+    text-align: center;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 100px;
+    width: 700px;
+    height:400px;
+    // margin: auto;
+    .mat-mdc-radio-button ~ .mat-mdc-radio-button  {
+        margin-left: 16px;
+        color: #5075d5;
+      }
+      .option1{
+        font-size: x-large;
+        color: #000000;
+      }.option2{
+        font-size: x-large;
+        color: #000000;
+      }
+    
+      .checker{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .client-check{
+          text-align: center;
+          width: 200px;
+          border: 1px solid white;
+          border-radius: 15px;
+          margin: 10px;
+        }
+
+
+        .freelancer-check{
+          text-align: center;
+          width: 200px;
+          border: 1px solid white;
+          border-radius: 15px;
+          margin: 10px;
+        }
+      }
+}
+
+.card{
+  background-color: #fff;
+  width: 20.25em;
+  box-shadow: 0 5px 30px rgba(1 1 1/20%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 10px;
+  transition: 0.2s ease;
+}
+
+
+.card:hover{
+  transform: scale(1.1,1.1);  
+}
+
+.icon{
+  color:#3a6cf4;
+  font-size: 4em;
+  text-align: center  ;
+}
+
+.info{
+  text-align: center;
+}
+
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 50px; /* adjust the height of the footer */
+  background-color: #ccc;
+}
+
+
+.submit-choose{
+  margin-top: 15px;
+}
+
+
+
+.footer{
+  background-color: #000016;
+  color: white;
+  // padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.footer-title{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+
+
+.social-icons a img {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  // background-color: #f0f0f0;
+}
+
