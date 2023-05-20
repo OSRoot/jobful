@@ -8,7 +8,9 @@
   <a href="" class="logo">Jobful</a>
   <div class="search-form">
     <div class="search-field">
-      <mat-icon>search</mat-icon>
+      <button mat-stroked-button (click)="openSnackBar()">
+        <mat-icon>search</mat-icon>
+      </button>
       <input matInput type="search" placeholder="search ..." />
     </div>
   </div>
@@ -46,13 +48,13 @@
 
 <div class="talent">
   <mat-card>
-    <button mat-button>
+    <button mat-button color="primary">
       <mat-card-content>Find Talent</mat-card-content>
     </button>
   </mat-card>
 
   <mat-card>
-    <button mat-button>
+    <button mat-button color="warn">
       <mat-card-content>Find Work</mat-card-content>
     </button>
   </mat-card>

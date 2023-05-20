@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -8,7 +9,9 @@ import { FormGroup } from '@angular/forms';
 })
 export class SignupComponent {
 
+
   // ############  STATIC VARIABLES #########################
+  isLoading = false
   user_firstname: string = ''
   user_lastname: string = ''
   user_email: string = ''
@@ -17,11 +20,20 @@ export class SignupComponent {
   validation_check!: string
   // ################# END ##################################
 
-  constructor() { }
+  constructor(
+    private route: Router
+  ) { }
 
   // ################# END ##################################
 
 
   // ################# END ##################################
 
+  onLogin() {
+    this.isLoading = true
+    setTimeout(() => {
+      this.isLoading = false;
+      this.route.navigate(['login'])
+    }, 600);
+  }
 }

@@ -1,8 +1,20 @@
 <mat-toolbar color="light">
   <a href="" class="logo">Jobful</a>
+
+  <div class="tool-links">
+    <button
+      mat-raised-button
+      color="warn"
+      class="login-btn"
+      (click)="onLogin()"
+    >
+      Login
+    </button>
+  </div>
 </mat-toolbar>
 
 <!-- Content  -->
+<app-spinner *ngIf="isLoading"></app-spinner>
 <div class="join-msg">
   <h1>Join to find work you love</h1>
 </div>
@@ -32,7 +44,7 @@
 
     <mat-form-field class="example-full-width">
       <mat-label>Password </mat-label>
-      <input matInput />
+      <input type="password" matInput />
     </mat-form-field>
     <div class="agree">
       <input type="checkbox" id="checkbox" name="checkbox" />

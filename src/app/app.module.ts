@@ -22,6 +22,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ChooseStageComponent } from './auth/choose-stage/choose-stage.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackbarSearchComponent } from './shared/snackbar-search/snackbar-search.component';
 
 
 
@@ -35,7 +37,8 @@ import { MatRadioModule } from '@angular/material/radio';
     SignupClientComponent,
     LoginComponent,
     SpinnerComponent,
-    ChooseStageComponent
+    ChooseStageComponent,
+    SnackbarSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,8 @@ import { MatRadioModule } from '@angular/material/radio';
     MatCheckboxModule,
     MatRadioModule,
     FormsModule,
+    MatSnackBarModule,
+
 
 
   ],

@@ -7,3 +7,104 @@ mat-toolbar{
         font-weight: 767;
     }
 }
+
+.example-form {
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+  
+  .td1 {
+    padding-right: 8px;
+  }
+
+form{
+    table{
+        margin-top: 10px;
+    }
+}
+
+.go-signup{
+    h3{
+        color: #ffde7c;
+    }
+}
+.container{
+    
+    border: 3px solid #5075d5;
+    margin: auto;
+    margin-top: 50px;
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+  .join-msg{
+    display: flex;
+    color: #5075d5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .example-margin {
+    margin: 0 10px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px; /* adjust the height of the footer */
+    background-color: #ccc;
+}
+
+
+
+
+.footer{
+    background-color: #000016;
+    color: white;
+    // padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    // background-color: #f0f0f0;
+}

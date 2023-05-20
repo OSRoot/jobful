@@ -1,5 +1,8 @@
 mat-toolbar{
     background: #131524;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     a{
         text-decoration: none;
         color: #5075d5;
@@ -61,7 +64,10 @@ form{
   .signup-btn{
     background-color:var(#108a00) ;
   }
+h3{
+  color: rgb(255, 244, 129);
 
+}
 
 footer{
   display: flex;

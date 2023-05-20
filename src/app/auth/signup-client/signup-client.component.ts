@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup-client',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class SignupClientComponent {
 
+  isLoading = false
+
+
+  constructor(
+    private route: Router
+  ) { }
+
+
+
+  onLogin() {
+    this.isLoading = true
+    setTimeout(() => {
+      this.isLoading = false
+      this.route.navigate(['login'])
+    }, 600);
+  }
 }

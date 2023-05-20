@@ -1,12 +1,16 @@
 mat-toolbar{
-    background: #131524;
-    a{
-        text-decoration: none;
-        color: #5075d5;
-        font-size: 30px;
-        font-weight: 767;
-    }
+  background: #131524;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a{
+      text-decoration: none;
+      color: #5075d5;
+      font-size: 30px;
+      font-weight: 767;
+  }
 }
+
 
 .example-form {
     min-width: 150px;
@@ -93,7 +97,9 @@ footer{
 }
 
 
-
+h3{
+    color: rgb(255, 244, 129);
+}
 .social-icons a img {
   width: 20px;
   height: 20px;

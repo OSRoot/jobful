@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
+import {
+  MatSnackBar,
+  MatSnackBarHorizontalPosition,
+  MatSnackBarVerticalPosition,
+} from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { SnackbarSearchComponent } from '../shared/snackbar-search/snackbar-search.component';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +14,18 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
+  isSearch = false;
+  durationInSec = 5;
   loading: boolean = false;
-  constructor(private router: Router) { }
+
+  horizontalPosition: MatSnackBarHorizontalPosition = 'center';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
+
+  constructor(
+    private router: Router,
+    private snackbar: MatSnackBar,
+
+  ) { }
 
   onSignup() {
     this.loading = true
@@ -25,5 +41,15 @@ export class HomeComponent {
       this.loading = false;
       this.router.navigate(['login'])
     }, 800);
+  }
+
+  onSearch() {
+
+  }
+  openSnackBar() {
+    this.snackbar.openFromComponent(SnackbarSearchComponent, {
+      duration: this.durationInSec * 1000, horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+    })
   }
 }

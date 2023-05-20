@@ -47,7 +47,7 @@ mat-toolbar{
         .client-check{
           text-align: center;
           width: 200px;
-          border: 1px solid white;
+          // border: 1px solid white;
           border-radius: 15px;
           margin: 10px;
         }
@@ -56,15 +56,19 @@ mat-toolbar{
         .freelancer-check{
           text-align: center;
           width: 200px;
-          border: 1px solid white;
+          // border: 1px solid white;
           border-radius: 15px;
           margin: 10px;
         }
       }
 }
 
+
+.desc{
+  margin: 0;
+}
 .card{
-  background-color: #fff;
+  background-color: #f0f0f0;
   width: 20.25em;
   box-shadow: 0 5px 30px rgba(1 1 1/20%);
   border-radius: 10px;
