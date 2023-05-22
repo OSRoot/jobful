@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent {
 
-
   // ############  STATIC VARIABLES #########################
+  @Input() role = ''
   isLoading = false
   user_firstname: string = ''
   user_lastname: string = ''
@@ -18,11 +18,15 @@ export class SignupComponent {
   user_password: string = ''
   signup_form!: FormGroup;
   validation_check!: string
+
   // ################# END ##################################
 
   constructor(
     private route: Router
-  ) { }
+  ) {
+    console.log(this.role);
+
+  }
 
   // ################# END ##################################
 
@@ -35,5 +39,10 @@ export class SignupComponent {
       this.isLoading = false;
       this.route.navigate(['login'])
     }, 600);
+  }
+
+
+  signup() {
+    this.route.navigate(['complete-freelancer'])
   }
 }

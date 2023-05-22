@@ -16,6 +16,8 @@
       <div class="info">
         <div class="client-check">
           <mat-radio-button value="client" (click)="set_option($event)">
+            <app-signup [role]="role" hidden></app-signup>
+
             <h3 class="option1">As Client</h3>
           </mat-radio-button>
           <p class="desc">I'am a client, hiring for a project</p>
@@ -30,6 +32,8 @@
       <div class="info">
         <div class="freelancer-check">
           <mat-radio-button value="freelancer" (click)="set_option($event)">
+            <app-freelancer [role]="role" hidden></app-freelancer>
+
             <h3 class="option2">As Freelancer</h3>
           </mat-radio-button>
           <p class="desc">I'm a freelancer, Looking for work</p>
@@ -73,14 +77,6 @@
   <div class="social-icons">
     <a href="#facebook">
       <mat-icon>facebook</mat-icon>
-    </a>
-
-    <a href="#Twiter">
-      <mat-icon>github</mat-icon>
-    </a>
-
-    <a href="#linkedin">
-      <mat-icon svgIcon="twitter"></mat-icon>
     </a>
   </div>
 </footer>

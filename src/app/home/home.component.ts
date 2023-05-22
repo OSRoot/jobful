@@ -15,8 +15,8 @@ import { SnackbarSearchComponent } from '../shared/snackbar-search/snackbar-sear
 export class HomeComponent {
 
   isSearch = false;
-  durationInSec = 5;
   loading: boolean = false;
+  durationInSec = 5;
 
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';

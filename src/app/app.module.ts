@@ -24,6 +24,10 @@ import { ChooseStageComponent } from './auth/choose-stage/choose-stage.component
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SnackbarSearchComponent } from './shared/snackbar-search/snackbar-search.component';
+import { FreelancerComponent } from './complete-info/freelancer/freelancer.component';
+import { ClientComponent } from './complete-info/client/client.component';
+import { SnackbarWelcomeComponent } from './shared/snackbar-welcome/snackbar-welcome.component';
+import { SearcherComponent } from './shared/searcher/searcher.component';
 
 
 
@@ -38,7 +42,11 @@ import { SnackbarSearchComponent } from './shared/snackbar-search/snackbar-searc
     LoginComponent,
     SpinnerComponent,
     ChooseStageComponent,
-    SnackbarSearchComponent
+    SnackbarSearchComponent,
+    FreelancerComponent,
+    ClientComponent,
+    SnackbarWelcomeComponent,
+    SearcherComponent
   ],
   imports: [
     BrowserModule,

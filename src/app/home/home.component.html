@@ -1,10 +1,4 @@
 <mat-toolbar color="light">
-  <!-- <div class="topnav">
-        <a class="" href="">Home</a>
-        <input type="text" placeholder="Search..">
-        <a href="">About</a>
-        <a href="">Contact</a>
-    </div> -->
   <a href="" class="logo">Jobful</a>
   <div class="search-form">
     <div class="search-field">
@@ -33,7 +27,7 @@
 <!-- ##########################################################################################################333 -->
 
 <app-spinner *ngIf="loading"></app-spinner>
-<div class="content">
+<!-- <div class="content">
   <div class="card">
     <div class="text-home">
       <h1>How work should work</h1>
@@ -44,20 +38,28 @@
     </div>
     <img src="../../assets/home.png" alt="" />
   </div>
-</div>
+</div> -->
+<div class="container">
+  <div class="text-home">
+    <h1>How work should work</h1>
+    <h1>We still work on this</h1>
+    <h3>
+      Forget the old rules. You can have the best people. Right now. Right here.
+    </h3>
+  </div>
+  <div class="talent">
+    <mat-card>
+      <button mat-button color="primary">
+        <mat-card-content>Find Talent</mat-card-content>
+      </button>
+    </mat-card>
 
-<div class="talent">
-  <mat-card>
-    <button mat-button color="primary">
-      <mat-card-content>Find Talent</mat-card-content>
-    </button>
-  </mat-card>
-
-  <mat-card>
-    <button mat-button color="warn">
-      <mat-card-content>Find Work</mat-card-content>
-    </button>
-  </mat-card>
+    <mat-card>
+      <button mat-button color="warn">
+        <mat-card-content>Find Work</mat-card-content>
+      </button>
+    </mat-card>
+  </div>
 </div>
 
 <!-- ########################################################################################################### -->
@@ -68,14 +70,6 @@
   <div class="social-icons">
     <a href="#facebook">
       <mat-icon>facebook</mat-icon>
-    </a>
-
-    <a href="#Twiter">
-      <mat-icon>github</mat-icon>
-    </a>
-
-    <a href="#linkedin">
-      <mat-icon svgIcon="twitter"></mat-icon>
     </a>
   </div>
 </footer>

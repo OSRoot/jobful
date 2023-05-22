@@ -14,7 +14,7 @@
 </mat-toolbar>
 
 <!-- Content  -->
-<app-spinner *ngIf="isLoading"></app-spinner>
+<!-- <app-spinner *ngIf="isLoading"></app-spinner>
 <div class="join-msg">
   <h1>Join to find work you love</h1>
 </div>
@@ -50,15 +50,23 @@
       <input type="checkbox" id="checkbox" name="checkbox" />
       <label for="checkbox">I Agree on terms and conditions</label>
     </div>
-    <button mat-raised-button class="signup-btn" style="width: 100%">
+    <button
+      mat-raised-button
+      class="signup-btn"
+      style="width: 100%"
+      routerLink="/complete-freelancer"
+    >
       Sign Up
     </button>
   </form>
 
   <div class="go-login">
-    <h3>Already have an account? <span>Login</span></h3>
+    <h3>
+      Already have an account?
+      <button mat-button color="light" routerLink="/login">Login</button>
+    </h3>
   </div>
-</div>
+</div> -->
 <!-- 
 
 <form class="example-form">
@@ -79,6 +87,37 @@
       </tr>
     </table>
   </form> -->
+
+<div class="login-box">
+  <h2>Join to find work you love</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="" />
+      <label>First name</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" required="" />
+      <label>Last name</label>
+    </div>
+
+    <div class="user-box">
+      <input type="text" name="" required="" />
+      <label>Email Address</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" required="" />
+      <label>Password</label>
+    </div>
+
+    <a (click)="signup()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Join Now
+    </a>
+  </form>
+</div>
 <!-- ##################################################3 -->
 
 <footer class="footer">
@@ -87,14 +126,6 @@
   <div class="social-icons">
     <a href="#facebook">
       <mat-icon>facebook</mat-icon>
-    </a>
-
-    <a href="#Twiter">
-      <mat-icon>github</mat-icon>
-    </a>
-
-    <a href="#linkedin">
-      <mat-icon svgIcon="twitter"></mat-icon>
     </a>
   </div>
 </footer>

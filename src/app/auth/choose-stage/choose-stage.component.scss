@@ -1,10 +1,11 @@
 
 mat-toolbar{
+  position: relative;
     display: flex;
     align-items:center ;
     justify-content: space-between;
     background: #131524;
-    border-bottom: 1px solid #dfdfdf;
+    // border-bottom: 1px solid #dfdfdf;
     // width: 100%;
     a{
         text-decoration: none;
@@ -23,7 +24,7 @@ mat-toolbar{
     text-align: center;
     border: 1px solid gray;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 700px;
     height:400px;
     // margin: auto;
