@@ -16,7 +16,7 @@
       <div class="info">
         <div class="client-check">
           <mat-radio-button value="client" (click)="set_option($event)">
-            <app-signup [role]="role" hidden></app-signup>
+            <app-signup hidden></app-signup>
 
             <h3 class="option1">As Client</h3>
           </mat-radio-button>
@@ -32,7 +32,7 @@
       <div class="info">
         <div class="freelancer-check">
           <mat-radio-button value="freelancer" (click)="set_option($event)">
-            <app-freelancer [role]="role" hidden></app-freelancer>
+            <app-freelancer hidden></app-freelancer>
 
             <h3 class="option2">As Freelancer</h3>
           </mat-radio-button>
@@ -64,7 +64,7 @@
     *ngIf="client"
     mat-raised-button
     color="primary"
-    (click)="go_signup_client()"
+    (click)="on_continue()"
   >
     Join as {{ client }}
   </button>

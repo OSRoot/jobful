@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-choose-stage',
   templateUrl: './choose-stage.component.html',
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ChooseStageComponent {
 
-  role = ''
+
   client!: string
   freelancer!: string
   isHidden!: boolean
@@ -16,6 +16,9 @@ export class ChooseStageComponent {
 
   constructor(
     private route: Router,
+    private alert: AlertController,
+
+
   ) {
 
   }
@@ -53,5 +56,17 @@ export class ChooseStageComponent {
       this.isLoading = false
       this.route.navigate(['signup-client'])
     }, 700);
+  }
+
+  async on_continue() {
+    let alert = await this.alert.create({
+      header: 'Confirm',
+      message: `continue as freelancer?`,
+      buttons: [
+        { text: 'Ok', handler: () => { } },
+        { text: 'Cancel', role: 'cancel' }
+      ]
+    })
+    await alert.present()
   }
 }

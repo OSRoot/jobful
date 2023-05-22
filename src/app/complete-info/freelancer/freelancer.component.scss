@@ -224,7 +224,7 @@ position: absolute;
 top: 80%;
 left: 50%;
 
-width: 400px;
+width: 50%;
 // height: 400 px !important;
 padding: 40px;
 transform: translate(-50%, -50%);
@@ -381,10 +381,13 @@ animation-delay: .76s
 }
 }
 
-
+ion-item{
+  padding: 5px;
+}
 
 
 .footer{
+  position:static;
   background-color: #000016;
   color: white;
   // padding: 2em;

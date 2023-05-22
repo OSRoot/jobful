@@ -18,17 +18,18 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { SignupClientComponent } from './auth/signup-client/signup-client.component';
 import { LoginComponent } from './auth/login/login.component';
-import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { SpinnerComponent } from '../shared/spinner/spinner.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ChooseStageComponent } from './auth/choose-stage/choose-stage.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { SnackbarSearchComponent } from './shared/snackbar-search/snackbar-search.component';
+import { SnackbarSearchComponent } from '../shared/snackbar-search/snackbar-search.component';
 import { FreelancerComponent } from './complete-info/freelancer/freelancer.component';
 import { ClientComponent } from './complete-info/client/client.component';
-import { SnackbarWelcomeComponent } from './shared/snackbar-welcome/snackbar-welcome.component';
-import { SearcherComponent } from './shared/searcher/searcher.component';
-
+import { SnackbarWelcomeComponent } from '../shared/snackbar-welcome/snackbar-welcome.component';
+import { SearcherComponent } from '../shared/searcher/searcher.component';
+import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -64,6 +65,8 @@ import { SearcherComponent } from './shared/searcher/searcher.component';
     MatRadioModule,
     FormsModule,
     MatSnackBarModule,
+    IonicModule.forRoot(),
+    HttpClientModule
 
 
 

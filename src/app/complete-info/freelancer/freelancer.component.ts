@@ -5,7 +5,7 @@ import {
   MatSnackBarVerticalPosition,
   MatSnackBarConfig
 } from '@angular/material/snack-bar';
-import { SnackbarWelcomeComponent } from 'src/app/shared/snackbar-welcome/snackbar-welcome.component';
+import { SnackbarWelcomeComponent } from 'src/shared/snackbar-welcome/snackbar-welcome.component';
 
 
 @Component({

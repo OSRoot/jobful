@@ -5,7 +5,7 @@ import {
   MatSnackBarVerticalPosition,
 } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-import { SnackbarSearchComponent } from '../shared/snackbar-search/snackbar-search.component';
+import { SnackbarSearchComponent } from '../../shared/snackbar-search/snackbar-search.component';
 
 @Component({
   selector: 'app-home',

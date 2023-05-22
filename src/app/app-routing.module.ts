@@ -7,7 +7,7 @@ import { ChooseStageComponent } from './auth/choose-stage/choose-stage.component
 import { SignupClientComponent } from './auth/signup-client/signup-client.component';
 import { FreelancerComponent } from './complete-info/freelancer/freelancer.component';
 import { ClientComponent } from './complete-info/client/client.component';
-import { SearcherComponent } from './shared/searcher/searcher.component';
+import { SearcherComponent } from '../shared/searcher/searcher.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
