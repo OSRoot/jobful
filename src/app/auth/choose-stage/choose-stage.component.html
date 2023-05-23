@@ -9,35 +9,27 @@
   <h1>Join as a client or freelancer</h1>
 
   <div class="checker">
-    <div class="card">
-      <div class="icon">
-        <i class="fa-solid fa-terminal"></i>
-      </div>
-      <div class="info">
-        <div class="client-check">
-          <mat-radio-button value="client" (click)="set_option($event)">
-            <app-signup hidden></app-signup>
+    <div class="card" style="display: flex">
+      <mat-card style="border-radius: 50px">
+        <mat-radio-button value="client" (click)="set_option($event)">
+          <h3 class="option1">As Client</h3>
+        </mat-radio-button>
+      </mat-card>
 
-            <h3 class="option1">As Client</h3>
-          </mat-radio-button>
-          <p class="desc">I'am a client, hiring for a project</p>
-        </div>
+      <div class="client-check">
+        <p class="desc">I'am a client, hiring for a project</p>
       </div>
     </div>
 
-    <div class="card">
-      <div class="icon">
-        <i class="fa-solid fa-terminal"></i>
-      </div>
-      <div class="info">
-        <div class="freelancer-check">
-          <mat-radio-button value="freelancer" (click)="set_option($event)">
-            <app-freelancer hidden></app-freelancer>
+    <div class="card" style="display: flex">
+      <mat-card style="border-radius: 50px">
+        <mat-radio-button value="freelancer" (click)="set_option($event)">
+          <h3 class="option1">As freelancer</h3>
+        </mat-radio-button>
+      </mat-card>
 
-            <h3 class="option2">As Freelancer</h3>
-          </mat-radio-button>
-          <p class="desc">I'm a freelancer, Looking for work</p>
-        </div>
+      <div class="client-check">
+        <p class="desc">I'am a client, hiring for a project</p>
       </div>
     </div>
   </div>

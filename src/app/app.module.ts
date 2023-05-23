@@ -30,6 +30,7 @@ import { SnackbarWelcomeComponent } from '../shared/snackbar-welcome/snackbar-we
 import { SearcherComponent } from '../shared/searcher/searcher.component';
 import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from '@angular/common/http';
+import { FreelancerInfoComponent } from './complete-info/freelancer-info/freelancer-info.component';
 
 
 
@@ -47,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     FreelancerComponent,
     ClientComponent,
     SnackbarWelcomeComponent,
-    SearcherComponent
+    SearcherComponent,
+    FreelancerInfoComponent
   ],
   imports: [
     BrowserModule,

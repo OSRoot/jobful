@@ -30,7 +30,7 @@ mat-toolbar{
     align-items: center;
     justify-content: center;
     // margin-left: 300px;
-    height: 30px;
+    // height: 30px;
     // border: 1px solid black;
     // border-top-left-radius: 13px;
     input{
@@ -39,6 +39,7 @@ mat-toolbar{
     mat-icon{
         color: white;
         padding: 5px;
+        height: 30px;
     }
     mat-icon:hover{
         cursor: pointer;
@@ -143,7 +144,7 @@ mat-toolbar{
 // }
 
 .heading{
-
+    // text-align: center;
     @media screen and (max-width: 767px) {
 
         padding: 3%;
@@ -151,12 +152,14 @@ mat-toolbar{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        text-align: center;
         img{
             width: 200px;
             height: 200px;
             border-radius: 50%;
     
         }
+    
 
     }
     
@@ -164,12 +167,23 @@ mat-toolbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1%;
     img{
         width: 300px;
         height: 300px;
         border-radius: 50%;
-
+        padding: 1%;
     }
+    h1{
+        color:   #5075d5;
+    }
+    h4{
+        color: #6a7175;
+        padding-right: 50px;
+    }
+
+
+
 }
 
 
