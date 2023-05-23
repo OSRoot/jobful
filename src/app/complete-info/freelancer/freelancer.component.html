@@ -5,7 +5,7 @@
     <button mat-raised-button color="warn" class="login-btn">Skip</button>
   </div>
 </mat-toolbar>
-
+<!-- 
 <div class="login-box">
   <h2 class="text-complete">Let's Complete your profile</h2>
   <form>
@@ -102,4 +102,112 @@
       <mat-icon>github</mat-icon>
     </a>
   </div>
-</footer>
+</footer> -->
+
+<div class="ion-padding container">
+  <h1>Sign up to find work you love</h1>
+
+  <div class="form-container">
+    <form [formGroup]="signup_form">
+      <ion-item>
+        <ion-label position="floating">Title *</ion-label>
+        <ion-input [(ngModel)]="user_title" formControlName="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Overview *</ion-label>
+        <ion-textarea
+          [(ngModel)]="user_overview"
+          formControlName="overview"
+        ></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Write Bio *</ion-label>
+        <ion-textarea
+          [(ngModel)]="user_bio"
+          formControlName="bio"
+        ></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Country *</ion-label>
+        <ion-input
+          [(ngModel)]="user_country"
+          formControlName="country"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">City *</ion-label>
+        <ion-input [(ngModel)]="user_city" formControlName="city"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Street Address *</ion-label>
+        <ion-input
+          [(ngModel)]="user_address"
+          formControlName="address"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Hourly Rate *</ion-label>
+        <ion-input
+          type="number"
+          placeholder="Ex. 7"
+          [(ngModel)]="user_hourly"
+          formControlName="hourly"
+          type="number"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Rating *</ion-label>
+        <ion-input
+          type="number"
+          placeholder="Ex. 7"
+          [(ngModel)]="user_rate"
+          formControlName="rate"
+          type="number"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="floating">Phone number</ion-label>
+        <ion-input
+          type="text"
+          placeholder="Ex. 01211111105"
+          [(ngModel)]="user_phone"
+          formControlName="phone"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Upload your picture</ion-label>
+        <ion-input
+          type="file"
+          [(ngModel)]="user_picture"
+          formControlName="picture"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Upload your CV</ion-label>
+        <ion-input
+          type="file"
+          [(ngModel)]="user_resume"
+          formControlName="resume"
+        ></ion-input>
+      </ion-item>
+
+      <ion-button
+        mode="ios"
+        expand="block"
+        class="main-button"
+        [disabled]="!signup_form.valid"
+        >Complete your Profile</ion-button
+      >
+    </form>
+  </div>
+</div>

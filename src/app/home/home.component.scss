@@ -6,6 +6,11 @@ mat-toolbar{
     background: #131524;
     // border-bottom: 1px solid #dfdfdf;
     // width: 100%;
+    .logo{
+        width: 120px;
+        height: 50px;
+        cursor: pointer;
+    }
     a{
         text-decoration: none;
         color: #5075d5;

@@ -113,8 +113,18 @@ footer{
   margin-top: 15px;
 }
 
+.disabled {
+  /* pointer-events: none; */ /* removed */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.25);
+}
 
-
+.disabled:hover {
+  cursor: not-allowed;
+}
+.create-acc:hover{
+  cursor:pointer;
+}
 .footer{
   background-color: #000016;
   color: white;

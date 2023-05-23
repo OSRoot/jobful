@@ -386,6 +386,40 @@ ion-item{
 }
 
 
+
+
+.container{
+  @media screen and (max-width: 600px){
+    padding-top: 60px;
+    width: 80%;
+    text-align: center;
+    h1{
+      color: #5075d5;
+    }
+    ion-item{
+      padding: 1%;
+      border-radius: 200px;
+    }
+  }
+  padding-top: 100px;
+  width: 50%;
+  text-align: center;
+  h1{
+    color: #5075d5;
+  }
+  ion-item{
+    // padding: 1%;
+    border-radius: 200px;
+  }
+}
+
+.sign-up{
+  color: yellow;
+}
+
+
+
+
 .footer{
   position:static;
   background-color: #000016;

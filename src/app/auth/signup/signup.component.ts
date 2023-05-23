@@ -19,6 +19,7 @@ export class SignupComponent implements OnInit {
   user_password: string = ''
   signup_form!: FormGroup;
   validation_check!: string
+
   // ################# END ##################################
 
   constructor(
@@ -230,5 +231,19 @@ export class SignupComponent implements OnInit {
     this.nav_ctrl.navigateForward('/choose-stage')
   }
 
+  async logger() {
+    let loader = await this.loader_ctrl.create({
+      message: 'Showing info in the console',
+      mode: 'ios',
+      duration: 3000
+    });
+    await loader.present()
+    console.log(`Firstname:${this.user_firstname}`);
+    console.log(`Lastname:${this.user_lastname}`);
+    console.log(`Email:${this.user_email}`);
+    console.log(`Phone:${this.user_phone}`);
+    console.log(`Password:${this.user_password}`);
+
+  }
 
 }
